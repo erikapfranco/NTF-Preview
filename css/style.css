@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Gudea&family=Outfit:wght@300;400;600&family=Playfair+Display:wght@500&family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-card{
+    background-color: rgb(21, 39, 63);
+    width: 350px;
+    height: 660px;
+    margin: 6rem 0;
+    border-radius: 10px;
+    z-index: 20;
+    position: relative;
+    bottom: 1.9rem;
+    padding:1.2rem;
+    gap: 7rem;
+}
+
+.nft-card > img{
+    width:100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.nft-titulo{
+    color: hsl(0, 0%, 100%);
+    font-size: 24px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.nft-descricao{
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.nft-valor{
+    color:hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.nft-tempo-restante{
+    color:hsl(215, 51%, 70%);
+}
+
+hr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border:1px solid hsl(215, 32%, 27%)
+}
+
+.nft-author {
+    display: flex;
+    align-items: center;
+    color:hsl(215, 51%, 70%);
+}
+
+.nft-author > img{
+    margin: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    width:10%;
+}
+
+.nft-author > span{
+    margin:5px;
+    color: hsl(0, 0%, 100%);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+  
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+  
+
+@media only screen and (max-width: 767px) {
+    main{
+        max-height: 40rem;
+        margin-top:80px;
+    }
+   
+}
+
+@media only screen and (max-width: 280px) {
+    .nft-card > img {
+       max-width: 12rem;
+    }
+
+    h1{
+        display: flex;
+    justify-content: center;
+    }
+
+    .nft-author{
+        margin-left: -1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ntf-card{
+        height: 430px;
+        width: 250px;
+    }
+
+    .info {
+        gap: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    main{
+        margin-top:80px;
+        max-height: 40rem;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .nft-card > img{
+       max-width: 12rem;
+    }
+
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .nft-author{
+        margin-left: -1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .nft-card{
+        height: 580px;
+        width: 250px;
+    }
+
+    .info {
+        gap: 1rem;
+    
+    }
+}
